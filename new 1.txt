@@ -1,0 +1,25 @@
+function disableSubmit() {
+	document.getElementById('submit').disabled = true;
+}
+function ValidateEmailAndPassword111(inputTextEmail,inputTextPassword){
+	var result = f1(inputTextEmail) && f2(inputTextPassword);
+	 if (result){
+		 document.getElementById('submit').disabled = false;
+	 }
+}
+
+function f2(inputTextPassword)
+{
+    var pass = document.getElementById('pass');
+    
+ 	
+    if(pass1.value.length > 5)
+    {       
+       return true;
+    }
+    else
+    {  message.innerHTML = " you have to enter at least 5 digit!"
+        return false;
+    }
+  
+    }  

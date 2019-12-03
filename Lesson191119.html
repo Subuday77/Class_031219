@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+	#header{
+	text-align:center
+	}
+      div.form {
+	  position: absolute;
+	  left:0px;
+	  
+	top: 30%;
+  width: 100%;
+  text-align: center;
+	  }
+    </style>
+    <script src="validations.js"></script>
+<title>Access check</title>
+<link rel="icon" type="image/jpg" href="https://pbs.twimg.com/profile_images/1092451626781163523/0YzJMi-8_400x400.jpg">
+</head>
+<body>
+
+<h1 id="header">Please, insert valid data</h1>
+<br>
+<form action="http://localhost:8080/welcome/login" onsubmit="validateEmail(email)">
+<div class="form">
+E-Mail:<br>
+<input type="email" name="email" id="email" autofocus required>
+<br>
+Password<br>
+<input type="password" id="pss" name="password" required pattern = ".{5,}">
+<br>
+State<br>
+<select  name="state" id="state" required = "required">
+<option disabled selected>Choose your state:</option>
+<option value = "Admin">Admin</option>
+<option value = "Company">Company</option>
+<option value = "Customer">Customer</option>
+</select>
+<br>
+<br>
+<button type="submit" id="submit">Enter</button>
+<button type="reset" id="reset">Reset</button>
+</form>
+</div>
+ <script type="text/javascript">
+ function Test(){
+	
+ }
+ </script>
+</body>
+</html>
